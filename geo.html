@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    
+</head>
+<body onload="getLocation()">
+
+    
+    
+        <div id="mapContainer"></div>    
+        
+        <div id="basemaps-wrapper" class="leaflet-bar">
+          <p><strong>Estadísticas</strong></p>
+          <button onclick="mostrar()">Mostrar</button> 
+          <button onclick="ocultar()">Ocultar</button> 
+          <section id="s1" class="hidden">
+         
+          <p><strong>Ciudad</strong></p>  
+          <p id="demo3"></p>          
+          <p><strong>Latitud</strong></p>
+          <p id="demo4"></p>
+          <p><strong>Longitud</strong></p>
+          <p id="demo5"></p>
+          <p><strong>Humedad %</strong></p>  
+          <p id="demo"></p>
+          <p><strong>Temperatura Cº</strong></p>  
+          <p id="demo7"></p>
+          <p><strong>Presión</strong></p>  
+          <p id="demo8"></p>
+          <p><strong>Velocidad del Viento</strong></p>  
+          <p id="demo9"></p>
+        </section> 
+          </div>
+
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
+        <script>
+            function ocultar() {
+              document.getElementById("s1").style.display = "none";
+            }
+
+            function mostrar(){
+              document.getElementById("s1").style.display = "block";
+            }
+            </script>
+          
+
+
+
+<!--*********************************************************************************-->
+
+        
+
+
+</body>
+</html>
